@@ -23,3 +23,22 @@ label {
 	font-size: 32px;
 }
 
+#header, #footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+#sidebar {
+    background-color: #eeeeee;
+    float: left;
+}
+
+#section {
+   
+}
+
+#footer {
+    clear: both;
+}
