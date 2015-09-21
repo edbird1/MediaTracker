@@ -1,13 +1,12 @@
 
 function showHide (name){
     obj = document.getElementById(name);
-  
+  alert("hidden");
   if (obj.style.visibility == visible){
-      alert("hidden");
+      
       obj.style.visibility = "hidden";
   }
   else {
-      alert("visi");
       obj.style.visibility = "visible"; 
   }
 }
