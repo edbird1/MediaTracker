@@ -4,7 +4,7 @@ function showHide (name){
 
   if (obj.style.visibility == visible){
         alert("hidden");
-      obj.style.visibility = "hidden";
+      obj.style.visibility = "visible";
   }
   else {
         alert("suck it");
