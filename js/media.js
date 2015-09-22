@@ -1,4 +1,16 @@
+$( document ).ready(function() {
+	console.log('have a pleasant day!');
 
+	$('.addDVD').on('click', function() {
+		alert('suck!!!');
+		$('.mediaForm').toggle();
+	});
+});
+
+
+
+
+/*
 function showHide (name){
     obj = document.getElementById(name);
     alert("Suck It!!!");
@@ -7,4 +19,4 @@ function showHide (name){
     } else {
         obj.style.visibility =  "visible"
     }
-}
+}v */

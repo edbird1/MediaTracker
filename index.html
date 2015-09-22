@@ -4,8 +4,8 @@
 		<title>Elayna's Media Library</title>
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
-		<script src="js/media.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+		<script src="js/media.js"></script>
 		<script src="js/bootstrap.js"></script>
 	</head>
 	<body>
@@ -26,7 +26,7 @@
 			<div id="videoAddRecord" class="row">
 				<h2>DVDs/Blue-Rays</h2>
 				<i class="glyphicon glyphicon-film"></i>
-				<button type="button" class="btn" onclick="showHide('mediaInput');">Add DVD/Blue-Ray</button>
+				<button type="button" class="addDVD btn">Add DVD/Blue-Ray</button>
 			</div>
 			<div id="cdAddRecord" class="row">
 				<h2>CDs</h2>
@@ -39,7 +39,7 @@
 				<button type="button" class="btn">Add Book</button>
 			</div>
 		</div>	
-		<div id="mediaInput" class="section col-xs-9 container" style="visibility:hidden;">
+		<div id="mediaInput" class="section col-xs-9 container mediaForm" style="display:none;">
 			<form>
 				<div>
 					<label for="name">Name:</label>

@@ -19,6 +19,10 @@ label {
     text-align: right;
 }
 
+.navbar {
+    margin-bottom: 0;
+}
+
 .features .glyphicon {
 	font-size: 32px;
 }
