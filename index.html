@@ -24,9 +24,9 @@
 		</div>
 		<div id="sidebar" class="container-fluid features col-xs-3">
 			<div id="videoAddRecord" class="row">
-				<h2>DVDs/Blue-Rays</h2>
+				<h2>DVDs/Blu-Rays</h2>
 				<i class="glyphicon glyphicon-film"></i>
-				<button type="button" class="addDVD btn">Add DVD/Blue-Ray</button>
+				<button type="button" class="addDVD btn">Add DVD/Blu-Ray</button>
 			</div>
 			<div id="cdAddRecord" class="row">
 				<h2>CDs</h2>
@@ -39,47 +39,49 @@
 				<button type="button" class="btn">Add Book</button>
 			</div>
 		</div>	
-		<div id="mediaInput" class="section col-xs-9 container mediaForm" style="display:none;">
-			<form>
-				<div>
-					<label for="name">Name:</label>
-					<input type="text" id="name"/>
-				</div>
-				<div>
-					<label for="mediaType">Media Type:</label>
-					<input type="radio" name="type" value="DVD" checked/> DVD
-					<input type="radio" name="type" value="Blue-Ray"/> Blue-Ray
-				</div>
-				<div>
-					<label for="genre">Genre:</label>
-					<input type="text" id="genre"/>
-				</div>
-				<div>
-					<label for="year">Year:</label>
-					<input type="text" id="year"/>
-				</div>
-				<div>
-					<label for="length">Run Length:</label>
-					<input type="text" id="length"/>
-				</div>
-				<div>
-					<label for="mpr">MPR (MPAA):</label>
-					<input type="radio" name="mpr" value="NR" checked/> Not Rated
-					<input type="radio" name="mpr" value="GA"/> G
-					<input type="radio" name="mpr" value="PG"/> PG
-					<input type="radio" name="mpr" value="PG-13"/> PG-13
-					<input type="radio" name="mpr" value="R"/> R
-					<input type="radio" name="mpr" value="other"/> Other
-				</div>
-				<div>
-					<label for="location">Location:</label>
-					<input type="radio" name="location" value="Elayna" checked/> Elayna
-					<input type="radio" name="location" value="checkOut"/> Checked Out
-				</div>
-				<div type="button" class="btn">
-					<button type="submit">Submit</button>
-				</div>
-			</form>
+		<div id="mediaInput" class="section col-xs-9 container" >
+			<div id="formDVD" class="mediaForm" style="display:none;">
+				<form>
+					<div>
+						<label for="name">Name:</label>
+						<input type="text" id="name"/>
+					</div>
+					<div>
+						<label for="mediaType">Media Type:</label>
+						<input type="radio" name="type" value="DVD" checked/> DVD
+						<input type="radio" name="type" value="Blu-Ray"/> Blu-Ray
+					</div>
+					<div>
+						<label for="genre">Genre:</label>
+						<input type="text" id="genre"/>
+					</div>
+					<div>
+						<label for="year">Year:</label>
+						<input type="text" id="year"/>
+					</div>
+					<div>
+						<label for="length">Run Length:</label>
+						<input type="text" id="length"/>
+					</div>
+					<div>
+						<label for="mpr">MPR (MPAA):</label>
+						<input type="radio" name="mpr" value="NR" checked/> Not Rated
+						<input type="radio" name="mpr" value="GA"/> G
+						<input type="radio" name="mpr" value="PG"/> PG
+						<input type="radio" name="mpr" value="PG-13"/> PG-13
+						<input type="radio" name="mpr" value="R"/> R
+						<input type="radio" name="mpr" value="other"/> Other
+					</div>
+					<div>
+						<label for="location">Location:</label>
+						<input type="radio" name="location" value="Elayna" checked/> Elayna
+						<input type="radio" name="location" value="checkOut"/> Checked Out
+					</div>
+					<div type="button" class="btn">
+						<button type="submit">Submit</button>
+					</div>
+				</form>
+			</div>
 		</div>		
 		<div id="footer" class="container-fluid footer">
 			<div class="footerContent">
