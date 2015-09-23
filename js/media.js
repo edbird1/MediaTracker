@@ -6,13 +6,21 @@ $( document ).ready(function() {
 		$('.mediaForm').toggle();
 	});
 
-	$(window).resize(sizeContent);
 
 	function sizeContent() {
-		var newHeight = $("html").height() - $("#header").height() - $("#footer").height() + "px";
-		$("#mediaInput").css("height", newHeight);
+		var docHeight = $(window).height();
+		console.log ('docHeight = ' + docHeight);
+		var headerHeight = $('#header').height();
+		console.log ('headerHeight = ' + headerHeight);
+		var footerHeight = $('#footer').height();
+		console.log ('footerHeight = ' + footerHeight);
+		var newHeight = docHeight - headerHeight - footerHeight - 2 + "px";
+		$("#sidebar").css("height", newHeight);
 	}
-		alert('Work!!!');
+
+	$(window).resize(sizeContent());
+
+	alert('Work!!!');
 
 });
 

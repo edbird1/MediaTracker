@@ -44,8 +44,16 @@ label {
     float: left;
 }
 
+.addBtn {
+    margin-left: 2%;
+}
+
 #section {
    
+}
+
+.mediaForm {
+    margin-top: 2%;
 }
 
 #footer {
