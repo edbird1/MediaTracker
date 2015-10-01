@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en">
 	<head>	
 		<title>Elayna's Media Library Database</title>
+		<script src="js/angular.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/main.ctrl.js"></script>
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
-		<script type="text/javascript" scr="https://code.angularjs.org/1.4.6/angular.min.js"></script>
-		<script type="text/javascript" src="js/media.js"></script>
-		<script type="text/javascript" src="js/app.js"></script>
-		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/media.js"></script>
+		<script src="js/bootstrap.js"></script>
 	</head>
-	<body>
+	<body ng-app="MyApp" ng-controller="mainController as main">
 		<div id="header" class="navbar container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
@@ -26,12 +27,18 @@
 		</div>
 		<div id="sidebar" class="container-fluid features col-xs-3">
 		</div>	
-		<div id="mediaList" class="section col-xs-9 container" ng-controller="mainController" >
-			<input type="text" ng-model="yourName" placeholder="Enter Here">
-			<h1>{{yourName}}</h1>
+		<div id="mediaList" class="section col-xs-9 container"  >
+			<input type="text" ng-model="main.yourName" placeholder="Enter Here">
+			<h1>{{main.yourName}}</h1>
 			<ul>
-				<li ng-repeat="item in list">
-					{{item.Name}}
+				<li ng-repeat="item in main.list">
+					<strong>{{item.name}}</strong>
+					{{item.mediaType}}
+					{{item.genre}}
+					{{item.year}}
+					{{item.length}}
+					{{item.mpr}}
+					{{item.checkOut}}
 				</li>
 			</ul>
 			

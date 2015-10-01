@@ -2,7 +2,7 @@ $( document ).ready(function() {
 	console.log('have a pleasant day!');
 
 	$('.addDVD').on('click', function() {
-		alert('Yes!!!');
+		console.log('Yes!!!');
 		$('.mediaForm').toggle();
 	});
 
@@ -20,7 +20,7 @@ $( document ).ready(function() {
 
 	$(window).resize(sizeContent());
 
-	alert('Work!!!');
+	console.log('Work!!!');
 
 });
 
