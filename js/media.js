@@ -2,10 +2,19 @@ $( document ).ready(function() {
 	console.log('have a pleasant day!');
 
 	$('.addDVD').on('click', function() {
-		console.log('Yes!!!');
-		$('.mediaForm').toggle();
+		console.log('Yes DVD!!!');
+		$('#formDVD').toggle();
 	});
 
+	$('.addCD').on('click', function() {
+		console.log('Yes CD!!!');
+		$('#formCD').toggle();
+	});
+
+	$('.addBook').on('click', function() {
+		console.log('Yes Book!!!');
+		$('#formBook').toggle();
+	});
 
 	function sizeContent() {
 		var docHeight = $(window).height();
