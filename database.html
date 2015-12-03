@@ -41,15 +41,29 @@
         <br>
         <br>
         <table>
-            <tr ng-repeat="item in main.list">
-                <td class="col-xs-2"><strong><ins>{{item.name}}</ins></strong></td>
-                <td class="col-xs-1">{{item.mediaType}}</td>
-                <td class="col-xs-1">{{item.genre}}</td>
-                <td class="col-xs-1">{{item.year}}</td>
-                <td class="col-xs-1">{{item.length}}</td>
-                <td class="col-xs-1">{{item.mpr}}</td>
-                <td class="col-xs-1">{{item.checkOut}}</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Media Type</th>
+                    <th>Genre</th>
+                    <th>Year</th>
+                    <th>Length (min)</th>
+                    <th>MPR</th>
+                    <th>Checked Out?</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr ng-repeat="item in main.list">
+                    <td class="col-xs-2"><strong><ins>{{item.name}}</ins></strong></td>
+                    <td class="col-xs-1">{{item.mediaType}}</td>
+                    <td class="col-xs-1">{{item.genre}}</td>
+                    <td class="col-xs-1">{{item.year}}</td>
+                    <td class="col-xs-1">{{item.length}}</td>
+                    <td class="col-xs-1">{{item.mpr}}</td>
+                    <td class="col-xs-1">{{item.checkOut}}</td>
+                </tr>
+            </tbody>
         </table>
     </div>
     <div id="footer" class="container-fluid footer">

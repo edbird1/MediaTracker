@@ -33,9 +33,10 @@ $(document).ready(function () {
 
 });
 
-document.getElementById('frmSearch').onsubmit = function () {
+/*document.getElementById('frmSearch').onsubmit = function () {
     window.location = 'http://www.google.com/search?q=site:http://edbird1.github.io/MediaTracker/ ' + document.getElementById('txtSearch').value;
-}
+}*/
+
 
 /*var mediaInputHeight = $("mediaInput").height();
 	$(".sidebar").height(mediaInputHeight);*/
